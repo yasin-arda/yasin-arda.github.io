@@ -44,6 +44,7 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -15323,5 +15324,89 @@ button:focus-visible,
 .pp-card-outdoor .pp-card-number,
 .pp-card-urban .pp-card-number {
     color: #d2b56b;
+}
+
+/* =========================================================
+   FINAL RESPONSIVE CORRECTIONS 24.08.2026
+   Bildproportionen, Sticky-Überschriften und Projektlinks
+   ========================================================= */
+
+/* Gestapelte Zweispalten-Abschnitte dürfen auf Tablet/Mobile nicht sticky bleiben. */
+@media (max-width: 900px) {
+    .learning-practice-intro,
+    .contact-fit-intro {
+        position: static;
+        top: auto;
+    }
+
+    .learning-competencies-section,
+    .learning-practice-section,
+    .learning-ai-section,
+    .learning-status-section,
+    .contact-fit-section,
+    .contact-closing-section {
+        padding-top: 86px;
+        padding-bottom: 86px;
+    }
+}
+
+/* Die Projektpfeile bleiben auch auf kleineren Viewports sichtbar und anklickbar. */
+@media (max-width: 1120px) {
+    .learning-practice-project {
+        grid-template-columns: 46px minmax(0, 1fr) 44px;
+        align-items: center;
+    }
+
+    .learning-practice-arrow {
+        width: 44px;
+        height: 44px;
+        display: grid;
+    }
+}
+
+@media (max-width: 720px) {
+    .learning-competencies-section,
+    .learning-practice-section,
+    .learning-ai-section,
+    .learning-status-section,
+    .contact-fit-section,
+    .contact-closing-section {
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
+    .learning-practice-project {
+        grid-template-columns: 40px minmax(0, 1fr) 40px;
+        gap: 16px;
+    }
+
+    .learning-practice-arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .learning-practice-project {
+        grid-template-columns: 34px minmax(0, 1fr) 36px;
+        gap: 12px;
+    }
+
+    .learning-practice-arrow {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Auf Touch-Geräten keine klebenden Hover-Verschiebungen. */
+@media (hover: none) {
+    .learning-practice-project:hover,
+    .contact-fit-item:hover {
+        padding-left: 0;
+    }
+
+    .learning-practice-project:hover .learning-practice-arrow {
+        transform: none;
+    }
 }
 
