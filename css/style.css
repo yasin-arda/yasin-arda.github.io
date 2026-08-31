@@ -15410,3 +15410,205 @@ button:focus-visible,
     }
 }
 
+
+
+/* =========================================================
+   FINAL UI / UX / RESPONSIVE QA 31.08.2026
+   Large-desktop headline safety, compact desktop header,
+   image-ratio safeguards and global LinkedIn footer link.
+   ========================================================= */
+
+/* Headings should wrap between words, never by slicing a word in two. */
+h1,
+h2,
+h3 {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+}
+
+/* Balance the large hero lines where supported. */
+.hero h1,
+.subpage-hero h1,
+.contact-page-hero h1,
+.career-hero h1,
+.pp-hero h1,
+.af-hero-content h1,
+.ohf-hero h1,
+.urban-hero h1,
+.oceyan-hero h1,
+.nova-hero h1 {
+    text-wrap: balance;
+}
+
+/* Explicitly protect long website / campaign screenshots from distortion. */
+.ohf-browser-frame img,
+.ohf-screen img,
+.ohf-mail-image img,
+.ohf-website-frame-image img,
+.urban-landingpage-image,
+.oceyan-mockup-image,
+.nova-hero-image img,
+.nova-image-button img {
+    width: 100%;
+    height: auto;
+}
+
+/* Global footer profile link: quiet, consistent with footer navigation. */
+.footer-linkedin {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    transition: color var(--transition), transform var(--transition);
+}
+
+.footer-linkedin-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    opacity: 0.76;
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.footer-linkedin-arrow {
+    color: var(--color-accent);
+    transition: transform var(--transition);
+}
+
+.footer-linkedin:hover,
+.footer-linkedin:focus-visible {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.footer-linkedin:hover .footer-linkedin-icon,
+.footer-linkedin:focus-visible .footer-linkedin-icon {
+    opacity: 1;
+}
+
+.footer-linkedin:hover .footer-linkedin-arrow,
+.footer-linkedin:focus-visible .footer-linkedin-arrow {
+    transform: translate(2px, -2px);
+}
+
+/* Desktop header: prevent the CV button/navigation from being pushed off-screen
+   at intermediate desktop widths while keeping the full navigation visible. */
+@media (min-width: 1121px) {
+    .header-inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: clamp(18px, 1.8vw, 30px);
+    }
+
+    .brand-logo-full {
+        width: clamp(280px, 20vw, 330px);
+    }
+
+    .main-navigation {
+        min-width: 0;
+        gap: clamp(11px, 1.15vw, 20px);
+    }
+
+    .main-navigation > a,
+    .nav-dropdown-trigger {
+        font-size: clamp(0.84rem, 0.86vw, 0.94rem);
+    }
+
+    .header-cv {
+        min-height: 40px;
+        padding-inline: 15px;
+        font-size: 0.88rem;
+    }
+}
+
+/* Projects and experience used nearly equal columns while the headline scaled
+   to ~6rem. On wide displays this left too little width for German compounds.
+   Give the headline the larger column and cap its growth. */
+@media (min-width: 901px) {
+    .pp-hero-grid {
+        grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
+        gap: clamp(52px, 4.2vw, 76px);
+    }
+
+    .pp-hero h1 {
+        max-width: 760px;
+        font-size: clamp(4rem, 4.45vw, 5.2rem);
+        line-height: 0.94;
+        letter-spacing: -0.06em;
+    }
+
+    .pp-hero-copy {
+        max-width: 520px;
+    }
+
+    .career-hero-grid {
+        grid-template-columns: minmax(0, 1.18fr) minmax(370px, 0.82fr);
+        gap: clamp(54px, 4.6vw, 82px);
+    }
+
+    .career-hero h1 {
+        max-width: 760px;
+        font-size: clamp(4rem, 4.7vw, 5.45rem);
+        line-height: 0.94;
+    }
+
+    /* Two other word-heavy case-study heroes get the same safety margin. */
+    .urban-hero-layout {
+        grid-template-columns: minmax(0, 1.18fr) minmax(400px, 0.82fr);
+        gap: clamp(54px, 4.5vw, 78px);
+    }
+
+    .urban-hero h1 {
+        font-size: clamp(3.8rem, 4.7vw, 5.35rem);
+    }
+
+    .oceyan-hero-layout {
+        grid-template-columns: minmax(0, 1.14fr) minmax(410px, 0.86fr);
+        gap: clamp(54px, 4.5vw, 78px);
+    }
+
+    .oceyan-hero h1 {
+        font-size: clamp(3.7rem, 4.55vw, 5.15rem);
+    }
+}
+
+/* The global tablet layout already stacks at 900px. Keep the transition clean
+   just above that breakpoint instead of squeezing text against the visual. */
+@media (min-width: 901px) and (max-width: 1040px) {
+    .pp-hero-grid,
+    .career-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .pp-hero-copy,
+    .career-hero-side {
+        max-width: 720px;
+    }
+}
+
+/* Very small screens: keep the longest German hero word inside the viewport
+   without falling back to mid-word wrapping. */
+@media (max-width: 420px) {
+    .ohf-hero h1 {
+        font-size: clamp(2.05rem, 10.6vw, 2.75rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+    }
+
+    .footer-linkedin {
+        margin-top: 13px;
+    }
+}
+
+@media (hover: none) {
+    .footer-linkedin:hover {
+        transform: none;
+    }
+}
