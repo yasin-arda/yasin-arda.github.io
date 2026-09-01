@@ -1628,7 +1628,6 @@ h1 span {
     padding-bottom: 38px;
 }
 
-
 /* =========================================================
    FOOTER – MARKE
    ========================================================= */
@@ -1891,6 +1890,35 @@ h1 span {
 .footer-top-link:hover span,
 .footer-top-link:focus-visible span {
     transform: translateY(-3px);
+}
+
+@media (min-width: 1121px) {
+    .footer-content {
+        grid-template-columns: minmax(300px, 1fr) minmax(520px, 0.95fr);
+        grid-template-areas:
+            "brand navigation"
+            "brand actions";
+        align-items: start;
+        column-gap: 64px;
+        row-gap: 24px;
+        padding-bottom: 30px;
+    }
+
+    .footer-brand-area {
+        grid-area: brand;
+    }
+
+    .footer-navigation {
+        grid-area: navigation;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .footer-actions {
+        grid-area: actions;
+        align-self: end;
+        justify-content: flex-start;
+    }
 }
 
 /* =========================================================

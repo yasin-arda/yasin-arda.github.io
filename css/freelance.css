@@ -224,9 +224,9 @@
 
 .freelance-service-card h3 {
     max-width: 330px;
-    margin: 33px 0 18px;
-    font-size: clamp(1.65rem, 2.2vw, 2.25rem);
-    line-height: 1.05;
+    margin: 33px 0 28px;
+    font-size: clamp(1.55rem, 2vw, 2.05rem);
+    line-height: 1.08;
     letter-spacing: -0.04em;
 }
 
@@ -234,9 +234,33 @@
     color: var(--color-forest-light);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1241px) {
     .freelance-service-card h3 {
-        min-height: 3.15em;
+        min-height: 2.25em;
+    }
+
+    .freelance-deliverable {
+        min-height: 88px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .freelance-service-card h3 {
+        min-height: 3.3em;
+    }
+
+    .freelance-deliverable {
+        min-height: 88px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px) {
+    .freelance-service-card h3 {
+        min-height: 2.3em;
+    }
+
+    .freelance-deliverable {
+        min-height: 88px;
     }
 }
 
@@ -272,6 +296,7 @@
 }
 
 .freelance-deliverable {
+    box-sizing: border-box;
     margin: auto 0 0;
     padding-top: 23px;
     color: #435148;
@@ -287,8 +312,8 @@
 .freelance-situations-grid,
 .freelance-faq-grid {
     display: grid;
-    grid-template-columns: minmax(300px, 0.74fr) minmax(0, 1.26fr);
-    gap: 100px;
+    grid-template-columns: minmax(330px, 0.82fr) minmax(0, 1.18fr);
+    gap: 90px;
 }
 
 .freelance-situations-heading {
@@ -297,9 +322,12 @@
     align-self: start;
 }
 
-.freelance-situations-heading h2,
+.freelance-situations-heading h2 {
+    font-size: clamp(2.45rem, 3.55vw, 3.9rem);
+}
+
 .freelance-faq-heading h2 {
-    font-size: clamp(2.65rem, 4.5vw, 4.7rem);
+    font-size: clamp(2.55rem, 4vw, 4.3rem);
 }
 
 .freelance-situations-heading h2 span,
@@ -462,6 +490,17 @@
     margin: 0;
     color: #5b685f;
     font-size: 0.88rem;
+}
+
+@media (min-width: 1025px) {
+    .freelance-collaboration .freelance-section-head h2 {
+        font-size: clamp(2.8rem, 4.45vw, 4.75rem);
+    }
+
+    .freelance-collaboration .freelance-section-head h2 span {
+        display: block;
+        white-space: nowrap;
+    }
 }
 
 .freelance-faq {
