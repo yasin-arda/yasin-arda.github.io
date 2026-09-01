@@ -3,17 +3,31 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yasinarda.de/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/" />
   </url>
   <url>
     <loc>https://yasinarda.de/en/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/" />
+  </url>
+  <url>
+    <loc>https://yasinarda.de/freelance/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/freelance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/freelance/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/freelance/" />
+  </url>
+  <url>
+    <loc>https://yasinarda.de/en/freelance/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/freelance/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/freelance/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/freelance/" />
   </url>
   <url>
     <loc>https://yasinarda.de/projekte.html</loc>
@@ -73,14 +87,14 @@
   </url>
   <url>
     <loc>https://yasinarda.de/kontakt.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/kontakt.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/contact.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/kontakt.html" />
   </url>
   <url>
     <loc>https://yasinarda.de/en/contact.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/kontakt.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/contact.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/kontakt.html" />
