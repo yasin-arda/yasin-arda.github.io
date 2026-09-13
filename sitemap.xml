@@ -3,14 +3,14 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yasinarda.de/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/" />
   </url>
   <url>
     <loc>https://yasinarda.de/en/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/" />
@@ -31,14 +31,14 @@
   </url>
   <url>
     <loc>https://yasinarda.de/projekte.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/projekte.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/projects.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/projekte.html" />
   </url>
   <url>
     <loc>https://yasinarda.de/en/projects.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/projekte.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/projects.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/projekte.html" />
@@ -59,14 +59,14 @@
   </url>
   <url>
     <loc>https://yasinarda.de/weiterbildung.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/weiterbildung.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/training.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/weiterbildung.html" />
   </url>
   <url>
     <loc>https://yasinarda.de/en/training.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/weiterbildung.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/training.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/weiterbildung.html" />
@@ -154,5 +154,19 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/projekte/oceyan-optics.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/projects/oceyan-optics.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/projekte/oceyan-optics.html" />
+  </url>
+  <url>
+    <loc>https://yasinarda.de/projekte/naturpur-seo.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/projekte/naturpur-seo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/projects/naturpur-seo.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/projekte/naturpur-seo.html" />
+  </url>
+  <url>
+    <loc>https://yasinarda.de/en/projects/naturpur-seo.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://yasinarda.de/projekte/naturpur-seo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://yasinarda.de/en/projects/naturpur-seo.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yasinarda.de/projekte/naturpur-seo.html" />
   </url>
 </urlset>

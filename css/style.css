@@ -2082,18 +2082,8 @@ h1 span {
 .learning-development-arrow {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
-}
-
-.learning-development-arrow span {
-    flex: 1;
-    height: 1px;
-    background:
-        linear-gradient(
-            to right,
-            rgba(46, 106, 76, 0.18),
-            var(--color-forest-light)
-        );
 }
 
 .learning-development-arrow strong {
@@ -15552,6 +15542,437 @@ h3 {
         min-height: 40px;
         padding-inline: 15px;
         font-size: 0.88rem;
+    }
+}
+
+/* NaturPur SEO case study */
+.pp-card-seo {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto 1fr;
+    color: #f7f7ef;
+    background: #112017;
+    border-color: #476a4e;
+}
+
+.pp-card-seo .pp-card-head {
+    grid-column: 1 / -1;
+    border-color: rgba(255,255,255,.16);
+}
+
+.pp-card-seo .pp-card-number,
+.pp-card-seo .pp-card-statement {
+    color: #d8e988;
+}
+
+.pp-card-seo .pp-card-visual {
+    height: auto;
+    min-height: 420px;
+}
+
+.pp-seo-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: clamp(30px, 4vw, 55px);
+    color: #112017;
+    background: #d8e988;
+}
+
+.pp-seo-visual-label,
+.pp-seo-visual-bottom {
+    font-size: .72rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.pp-seo-visual strong {
+    font-size: clamp(2.2rem, 4vw, 4.8rem);
+    line-height: 1.02;
+    letter-spacing: -.065em;
+}
+
+.pp-card-seo .pp-card-content {
+    justify-content: center;
+    min-height: 420px;
+    padding: clamp(30px, 4vw, 55px);
+}
+
+@media (max-width: 700px) {
+    .pp-card-seo {
+        display: flex;
+    }
+    .pp-card-seo .pp-card-visual {
+        min-height: 300px;
+    }
+    .pp-card-seo .pp-card-content {
+        min-height: 360px;
+    }
+}
+
+.seo-case {
+    color: #15241d;
+    background: #f8f7f2;
+}
+
+.seo-case-hero {
+    color: #f7f7ef;
+    background: radial-gradient(circle at 85% 18%, rgba(185, 205, 91, .13), transparent 31%), #112017;
+    padding: clamp(60px, 7vw, 110px) 0 clamp(48px, 6vw, 82px);
+}
+
+.seo-case-overline,
+.seo-case-kicker,
+.seo-case-side > span {
+    font-size: .77rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.seo-case-overline {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+    color: #d8e988;
+}
+
+.seo-case-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(250px, .55fr);
+    align-items: end;
+    gap: clamp(40px, 6vw, 100px);
+    padding: clamp(60px, 8vw, 120px) 0 clamp(58px, 7vw, 94px);
+}
+
+.seo-case-kicker {
+    margin: 0 0 22px;
+    color: #d8e988;
+}
+
+.seo-case h1,
+.seo-case h2,
+.seo-case h3 {
+    letter-spacing: -.055em;
+}
+
+.seo-case h1 {
+    max-width: 920px;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(3.5rem, 7.2vw, 7.7rem);
+    line-height: .96;
+    overflow-wrap: normal;
+}
+
+.seo-case h1 em {
+    color: #d8e988;
+    font-style: normal;
+}
+
+.seo-case-term {
+    white-space: nowrap;
+}
+
+.seo-case-lead {
+    max-width: 760px;
+    margin: 33px 0 0;
+    color: #d9dfd4;
+    font-size: clamp(1.07rem, 1.35vw, 1.3rem);
+    line-height: 1.7;
+}
+
+.seo-case-hero-note {
+    padding: 28px 0 0;
+    border-top: 1px solid rgba(216,233,136,.62);
+}
+
+.seo-case-hero-note p {
+    margin: 0 0 18px;
+    color: #d8e988;
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.seo-case-hero-note strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: clamp(1.2rem, 1.7vw, 1.6rem);
+    line-height: 1.25;
+}
+
+.seo-case-hero-note span {
+    display: block;
+    color: #cbd3c6;
+    font-size: .96rem;
+    line-height: 1.65;
+}
+
+.seo-case-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-top: 1px solid rgba(255,255,255,.18);
+    padding-top: 25px;
+}
+
+.seo-case-facts div {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.seo-case-facts strong {
+    color: #d8e988;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    line-height: 1;
+}
+
+.seo-case-facts span {
+    color: #e2e6dc;
+    font-size: .94rem;
+}
+
+.seo-case-section {
+    padding: clamp(68px, 8vw, 120px) 0;
+    border-bottom: 1px solid #d9ded4;
+}
+
+.seo-case-section-tint {
+    background: #eaf0e8;
+}
+
+.seo-case-section-grid {
+    display: grid;
+    grid-template-columns: minmax(230px, .78fr) minmax(0, 1.35fr);
+    gap: clamp(42px, 7vw, 116px);
+}
+
+.seo-case-side > span {
+    color: #34654c;
+}
+
+.seo-case-side h2,
+.seo-case-outro h2 {
+    margin: 24px 0 0;
+    font-size: clamp(2.5rem, 4vw, 4.7rem);
+    line-height: 1.02;
+    color: #15241d;
+}
+
+.seo-case-side p {
+    max-width: 360px;
+    margin: 25px 0 0;
+    color: #53645b;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.seo-case-body {
+    min-width: 0;
+}
+
+.seo-case-body > p {
+    max-width: 780px;
+    margin: 0 0 22px;
+    font-size: clamp(1.03rem, 1.2vw, 1.16rem);
+    line-height: 1.75;
+}
+
+.seo-case-body > p:last-child {
+    margin-bottom: 0;
+}
+
+.seo-case-table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.seo-case-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.seo-case-table caption {
+    margin-bottom: 18px;
+    color: #34654c;
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.seo-case-table th,
+.seo-case-table td {
+    padding: 18px 14px 18px 0;
+    border-bottom: 1px solid #b8c7b8;
+    vertical-align: top;
+    line-height: 1.45;
+}
+
+.seo-case-table thead th {
+    color: #53645b;
+    font-size: .82rem;
+    font-weight: 800;
+}
+
+.seo-case-table tbody th {
+    color: #15241d;
+    font-weight: 800;
+}
+
+.seo-case-insight {
+    margin-top: 32px !important;
+    padding-left: 22px;
+    border-left: 3px solid #34654c;
+}
+
+.seo-case-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 38px 0;
+}
+
+.seo-case figure {
+    min-width: 0;
+    margin: 0;
+}
+
+.seo-case-media-grid img,
+.seo-case-wide-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #d6ddd4;
+    background: #fff;
+}
+
+.seo-case figcaption {
+    margin-top: 12px;
+    color: #53645b;
+    font-size: .83rem;
+    line-height: 1.5;
+}
+
+.seo-case-priorities {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #b8c7b8;
+}
+
+.seo-case-priorities h3 {
+    margin: 0 0 24px;
+    color: #15241d;
+    font-size: 1.6rem;
+}
+
+.seo-case-priorities ol {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.65;
+}
+
+.seo-case-priorities li::marker {
+    color: #34654c;
+    font-weight: 900;
+}
+
+.seo-case-wide-figure {
+    margin: 35px 0 !important;
+}
+
+.seo-case-outro {
+    padding: clamp(70px, 9vw, 130px) 0;
+    color: #fff;
+    background: #112017;
+}
+
+.seo-case-outro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, .85fr);
+    gap: clamp(50px, 8vw, 130px);
+}
+
+.seo-case-outro h2 {
+    color: #fff;
+}
+
+.seo-case-outro-grid > div:last-child > p:first-child {
+    margin: 0 0 30px;
+    color: #d9dfd4;
+    font-size: 1.16rem;
+    line-height: 1.7;
+}
+
+.seo-case-disclosure {
+    margin: 44px 0 0;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    color: #bdc9bc;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .seo-case-hero-grid,
+    .seo-case-section-grid,
+    .seo-case-outro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .seo-case-hero-grid {
+        padding: 70px 0 60px;
+    }
+
+    .seo-case-hero-note {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 600px) {
+    .seo-case-overline {
+        flex-wrap: wrap;
+        gap: 6px 18px;
+    }
+
+    .seo-case h1 {
+        font-size: clamp(2.9rem, 12vw, 4.3rem);
+    }
+
+    .seo-case-facts {
+        gap: 14px;
+    }
+
+    .seo-case-facts div {
+        display: block;
+    }
+
+    .seo-case-facts span {
+        display: block;
+        margin-top: 6px;
+        font-size: .78rem;
+    }
+
+    .seo-case-media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seo-case-table {
+        min-width: 520px;
     }
 }
 
