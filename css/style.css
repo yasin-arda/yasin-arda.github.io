@@ -15616,6 +15616,14 @@ h3 {
 .seo-case {
     color: #15241d;
     background: #f8f7f2;
+    --case-related-bg: #f8f7f2;
+    --case-related-ink: #15241d;
+    --case-related-muted: #526158;
+    --case-related-accent: #315b42;
+    --case-related-accent-decor: #778c30;
+    --case-related-line: rgba(21, 36, 29, .16);
+    --case-related-hover: rgba(49, 91, 66, .06);
+    --case-related-tint: rgba(49, 91, 66, .04);
 }
 
 .seo-case-hero {
@@ -15944,6 +15952,12 @@ h3 {
 }
 
 @media (max-width: 600px) {
+    .seo-case .case-related-head {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+
     .seo-case-overline {
         flex-wrap: wrap;
         gap: 6px 18px;
